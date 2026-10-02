@@ -1,5 +1,4 @@
 type value = string | number | boolean | {any}
-
 type method = (self: any, ...any) -> any
 
 return function(value: value, methods: { [string]: method })

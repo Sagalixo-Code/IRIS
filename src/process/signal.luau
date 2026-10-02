@@ -1,4 +1,5 @@
 const class = require("../class")
+const ts = require("../types")
 
 const signal = class {
     constructor = function(this: class.classRType, ...: any) end,
@@ -79,12 +80,4 @@ signal:public({
 
 })
 
-return signal :: (...any) -> {
-    connect: (self: class.classRType, callback: (...any) -> ()) -> (() -> ()),
-    once: (self: class.classRType, callback: (...any) -> ()) -> (() -> ()),
-    fire: (self: class.classRType, ...any) -> (),
-    disconnect: (self: class.classRType, callback: (...any) -> ()) -> (),
-    disconnectAll: (self: class.classRType) -> (),
-    wait: (self: class.classRType) -> ...any,
-    destroy: (self: class.classRType) -> (),
-}
+return signal :: ts.signal<class.classRType>
