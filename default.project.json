@@ -1,0 +1,12 @@
+{
+  "name": "IRIS",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "IRIS": {
+        "$path": "src/init.luau"
+      }
+    }
+  }
+}
